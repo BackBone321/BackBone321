@@ -12,7 +12,7 @@
 
 ## 🚀 About Me
 
-I'm a passionate developer who believes in the power of clean code and innovative solutions. My journey in tech is driven by curiosity, creativity, and a constant desire to learn and build.
+I'm a passionate developer who believes in the power of Vibe code and innovative solutions. My journey in tech is driven by curiosity, creativity, and a constant desire to learn and build.
 
 </div>
 

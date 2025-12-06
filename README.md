@@ -137,7 +137,7 @@ const backbone = {
 
 <div align="center">
 
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
+<h3 style="font-family: 'Bebas Neue', sans-serif; font-weight: 400;">💡 "If the code produces an error, take a break, play DOTA to clear your mind, then come back so you can get back on track"</h3>
 
 </div>
 

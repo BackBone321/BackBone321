@@ -1,159 +1,573 @@
-<div align="center">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-# 👋 Hey, I'm BackBone321
+        :root {
+            --primary: #00F0FF;
+            --secondary: #FF006E;
+            --accent: #FFBE0B;
+            --dark: #0A0E27;
+            --light: #F0F4F8;
+            --glow: rgba(0, 240, 255, 0.6);
+        }
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=2000&pause=800&color=6366F1&center=true&vCenter=true&repeat=true&width=600&lines=Eat+%F0%9F%8D%95;Drink+%E2%98%95;Sleep+%F0%9F%9B%8C;I+Want+to+be+a+Coder+%F0%9F%92%BB" alt="Typing SVG" />
-</div>
-<br/>
-<div align="center">
+        body {
+            background: linear-gradient(135deg, #0A0E27 0%, #1a1d3f 50%, #0A0E27 100%);
+            color: var(--light);
+            font-family: 'Space Mono', monospace;
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
 
+        /* Animated background particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+            pointer-events: none;
+        }
 
-</div>
+        .particle {
+            position: absolute;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: float 20s infinite;
+            opacity: 0.1;
+        }
 
-<br/>
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            25% { transform: translateY(-100px) translateX(50px); }
+            50% { transform: translateY(-200px) translateX(-50px); }
+            75% { transform: translateY(-100px) translateX(100px); }
+        }
 
-<div align="center">
-  
-  [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=white)](https://yourportfolio.com)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-  [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-  
-</div>
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
 
----
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 4rem 0;
+            position: relative;
+        }
 
-## 🎯 About Me
+        .glitch-wrapper {
+            position: relative;
+            display: inline-block;
+        }
 
-```typescript
-const developer = {
-  name: "BackBone321",
-  location: "Building the future, one commit at a time",
-  current: "Crafting scalable solutions & exploring AI/ML",
-  languages: ["Dart", "C++", "CSS", "HTML", "PYTHON" "JavaScript", "java"],
-  architecture: ["Microservices", "Event-Driven", "Serverless"],
-  motto: "Clean code, better solutions, endless curiosity Vibe Code 😎",
-  
-  whenNotCoding: () => {
-    return ["Playing DOTA 🎮", "Coffee brewing ☕", "Tech blogging ✍️"];
-  }
-};
-```
+        .name {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 800;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientShift 3s ease infinite;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            margin-bottom: 1rem;
+        }
 
-<br/>
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% center; }
+            50% { background-position: 100% center; }
+        }
 
-## 🛠️ Tech Arsenal
+        .tagline {
+            font-size: clamp(1rem, 2vw, 1.5rem);
+            color: var(--primary);
+            letter-spacing: 4px;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards 0.3s;
+        }
 
-<table align="center">
-  <tr>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=js" width="48" height="48" alt="JavaScript" />
-      <br>JavaScript
-    </td>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=ts" width="48" height="48" alt="TypeScript" />
-      <br>TypeScript
-    </td>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=python" width="48" height="48" alt="Python" />
-      <br>Python
-    </td>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React" />
-      <br>React
-    </td>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=nextjs" width="48" height="48" alt="Next.js" />
-      <br>Next.js
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=nodejs" width="48" height="48" alt="Node.js" />
-      <br>Node.js
-    </td>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind" />
-      <br>Tailwind
-    </td>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=mongodb" width="48" height="48" alt="MongoDB" />
-      <br>MongoDB
-    </td>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=postgres" width="48" height="48" alt="PostgreSQL" />
-      <br>PostgreSQL
-    </td>
-    <td align="center" width="140">
-      <img src="https://skillicons.dev/icons?i=docker" width="48" height="48" alt="Docker" />
-      <br>Docker
-    </td>
-  </tr>
-</table>
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+        }
 
-<br/>
+        /* Skills Grid */
+        .section-title {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin: 4rem 0 2rem;
+            position: relative;
+            display: inline-block;
+        }
 
-## 📊 GitHub Analytics
+        .section-title::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            animation: expandWidth 1s ease forwards;
+        }
 
-<div align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=BackBone321&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=6366F1&text_color=E5E7EB" alt="GitHub Stats" />
-  <img width="49%" src="https://streak-stats.demolab.com?user=BackBone321&theme=radical&hide_border=true&background=0D1117&ring=6366F1&fire=F59E0B&currStreakLabel=6366F1" alt="GitHub Streak" />
-</div>
+        @keyframes expandWidth {
+            from { width: 0; }
+            to { width: 60%; }
+        }
 
-<div align="center">
-  <img width="70%" src="https://github-readme-activity-graph.vercel.app/graph?username=BackBone321&custom_title=Contribution%20Graph&bg_color=0D1117&color=6366F1&line=6366F1&point=E5E7EB&area_color=6366F1&area=true&hide_border=true" alt="Contribution Graph" />
-</div>
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
 
-<br/>
+        .skill-category {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(0, 240, 255, 0.2);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
 
-## 🚀 Featured Projects
+        .skill-category::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.1), transparent);
+            transition: left 0.6s;
+        }
 
-<div align="center">
+        .skill-category:hover::before {
+            left: 100%;
+        }
 
-| Project | Description | Tech Stack |
-|---------|-------------|------------|
-| 🎯 **[Project Alpha](#)** | AI-powered solution for X | React, Python, TensorFlow |
-| 🌟 **[Project Beta](#)** | Real-time collaboration tool | Next.js, WebSocket, Redis |
-| 💡 **[Project Gamma](#)** | Open-source dev toolkit | TypeScript, Node.js, CLI |
+        .skill-category:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 60px rgba(0, 240, 255, 0.3);
+        }
 
-</div>
+        .category-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
 
-<br/>
+        .category-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
 
-## 💭 Philosophy
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
 
-<div align="center">
+        .skill-tag {
+            background: rgba(0, 240, 255, 0.1);
+            border: 1px solid var(--primary);
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
 
-> *"If the code produces an error, take a break, play DOTA to clear your mind,*  
-> *then come back so you can get back on track."*
-> 
-> **— BackBone321**
+        .skill-tag::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: var(--primary);
+            transition: all 0.5s ease;
+            transform: translate(-50%, -50%);
+        }
 
-</div>
+        .skill-tag:hover::before {
+            width: 200%;
+            height: 200%;
+        }
 
-<br/>
+        .skill-tag:hover {
+            color: var(--dark);
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
 
-## 📈 This Week's Coding Stats
+        .skill-tag span {
+            position: relative;
+            z-index: 1;
+        }
 
-<!--START_SECTION:waka-->
-```text
-Flutter/Dart   12 hrs 45 mins   ████████████░░░░░   48.2%
-HTML            6 hrs 30 mins   ██████░░░░░░░░░░░   24.6%
-CSS             4 hrs 15 mins   ████░░░░░░░░░░░░░   16.1%
-PHP             2 hrs 10 mins   ██░░░░░░░░░░░░░░░    8.2%
-Other           50 mins         █░░░░░░░░░░░░░░░░    2.9%
-```
-<!--END_SECTION:waka-->
+        /* Stats Section */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
 
-<br/>
+        .stat-card {
+            background: linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(255, 0, 110, 0.1));
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
 
----
+        .stat-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 240, 255, 0.2), transparent);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
 
-<div align="center">
+        .stat-card:hover::after {
+            opacity: 1;
+            animation: rotate 4s linear infinite;
+        }
 
-### 🌟 Show some love by starring some repositories!
+        @keyframes rotate {
+            to { transform: rotate(360deg); }
+        }
 
-![](https://komarev.com/ghpvc/?username=BackBone321&style=for-the-badge&color=6366F1)
+        .stat-number {
+            font-family: 'Syne', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            z-index: 1;
+        }
 
-**Built with 💜 and excessive amounts of ☕ Love**
+        .stat-label {
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            position: relative;
+            z-index: 1;
+        }
 
-</div>
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .contact-link {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid var(--primary);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            text-decoration: none;
+            color: var(--light);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .contact-link:hover::before {
+            left: 100%;
+        }
+
+        .contact-link:hover {
+            transform: translateY(-5px);
+            background: rgba(0, 240, 255, 0.1);
+            box-shadow: 0 10px 30px var(--glow);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-quote {
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .name {
+                font-size: 3rem;
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="glitch-wrapper">
+                <h1 class="name">Your Name</h1>
+            </div>
+            <p class="tagline">Full-Stack Developer & Innovator</p>
+        </header>
+
+        <!-- Skills Section -->
+        <section class="fade-in">
+            <h2 class="section-title">⚡ Tech Arsenal</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🎨</span>
+                        Frontend
+                    </h3>
+                    <div class="skill-tags">
+                        <div class="skill-tag"><span>HTML5</span></div>
+                        <div class="skill-tag"><span>CSS3</span></div>
+                        <div class="skill-tag"><span>JavaScript</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">⚙️</span>
+                        Backend
+                    </h3>
+                    <div class="skill-tags">
+                        <div class="skill-tag"><span>Python</span></div>
+                        <div class="skill-tag"><span>C#</span></div>
+                        <div class="skill-tag"><span>C</span></div>
+                        <div class="skill-tag"><span>PHP</span></div>
+                        <div class="skill-tag"><span>Node.js</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">📱</span>
+                        Mobile
+                    </h3>
+                    <div class="skill-tags">
+                        <div class="skill-tag"><span>Dart</span></div>
+                        <div class="skill-tag"><span>Flutter</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">☁️</span>
+                        Cloud & DB
+                    </h3>
+                    <div class="skill-tags">
+                        <div class="skill-tag"><span>Firebase</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="fade-in">
+            <h2 class="section-title">📊 GitHub Stats</h2>
+            
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Commits</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Languages</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Ideas</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="fade-in">
+            <h2 class="section-title">🌐 Connect</h2>
+            
+            <div class="contact-grid">
+                <a href="mailto:your.email@example.com" class="contact-link">
+                    <span class="contact-icon">📧</span>
+                    <div>Email</div>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" class="contact-link">
+                    <span class="contact-icon">💼</span>
+                    <div>LinkedIn</div>
+                </a>
+                <a href="https://github.com/yourusername" class="contact-link">
+                    <span class="contact-icon">💻</span>
+                    <div>GitHub</div>
+                </a>
+                <a href="https://twitter.com/yourhandle" class="contact-link">
+                    <span class="contact-icon">🐦</span>
+                    <div>Twitter</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-quote">"First, solve the problem. Then, write the code."</p>
+            <p>© 2024 | Built with 💙 and ☕</p>
+        </footer>
+    </div>
+
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const particles = document.getElementById('particles');
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.width = Math.random() * 4 + 2 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = Math.random() * 20 + 20 + 's';
+                particles.appendChild(particle);
+            }
+        }
+
+        // Scroll animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Initialize
+        createParticles();
+
+        // Skill tag interaction
+        document.querySelectorAll('.skill-tag').forEach(tag => {
+            tag.addEventListener('click', function() {
+                this.style.animation = 'none';
+                setTimeout(() => {
+                    this.style.animation = '';
+                }, 10);
+            });
+        });
+    </script>
+</body>
+</html>
